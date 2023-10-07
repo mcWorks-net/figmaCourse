@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+            center: true,
+            padding: '2rem',
+            },
+            extend: {}
+          }
+        }
+      </script>
+      <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+      </style>
+</head>
+<body class="bg-black">
+    <header class="header">
+        <div class="container">
+            <div class="headerWrapper flex justify-between items-center">
+                <h3 class="text-white py-10 text-lg">MC/</h3>
+                <i class="fa-solid fa-burger text-white text-2xl"></i>
+            </div>
+        </div>
+    </header>
+    <section class="banner py-10">
+        <div class="container">
+            <div class="lg:flex lg:justify-between gap-10">
+                <div class="order-1 lg:order-2 py-5">
+                    <h1 class="text-[2rem] md:text-[5rem] md:leading-[1] lg:text-[6rem] lg:leading-[7rem]">Mark <br><span class="text-gray-500">Christopher</span></h1>
+                    <h3 class="mb-20">Graphic and Web Developer </h3>
+                    <img class="w-full lg:w-[80%]"  src="https://itp.usc.edu/wp-content/uploads/2020/10/prog-web.jpg" alt="">
+                </div>
+                <div class="order-2 lg:order-1">
+                    <div class="lg:flex lg:flex-end gap-2 mb-16"">
+                        <img class="w-ful lg:w-[50%]" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+                        <img class="w-ful lg:w-[30%] mt-auto lg:h-[146px] lg:h-full" src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+                    </div>
+                    <h1 class="text-2xl mb-4">
+                         Creative Portfolio
+                    </h1>
+                    <p class="lg:w-[80%] mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae, earum molestias eveniet magnam fugiat illo cupiditate officiis ducimus, molestiae quo quaerat tempore expedita officia incidunt voluptatem! Voluptas, neque. Ullam ut dolorum dolor labore est maxime eligendi aut totam, veniam dignissimos eos sequi culpa enim, asperiores vitae. Expedita, aspernatur magnam!</p>
+                    <p>
+                        <a class="bg-[#6b7280] py-2 px-6 inline-block rounded-lg" href="#">Explore More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
