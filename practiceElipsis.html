@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        table,tr,th,td {
+            border: 1px solid black;
+        }
+        th {
+            width: 200px;
+        }
+        td {
+            height: 27px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        /* .cutText {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        } */
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            },
+            container: {
+                center: true,
+                padding: '2rem',
+            },
+          }
+        }
+      </script>
+</head>
+<body>
+    <section class="py-24 w-full">
+        <div class="container">
+            <table class="border border-2 border-black w-full">
+                <tr class="border border-2 border-black">
+                    <th class="text-left">Data</th>
+                    <th class="text-left">Data</th>
+                </tr>
+                <tr class="group">
+                    <td>Lorem, ipsum.</td>
+                    <td class="flex w-[1039px]">
+                        <div class="text-ellipsis overflow-hidden bg-red-400">
+                            <p class="truncate">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui odit dolor tenetur dolores porro. Quasi magnam quisquam hic harum ab. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="hidden group-hover:block bg-blue-500 text-white w-[]">iconFunctions</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+   
+</body>
+</html>
